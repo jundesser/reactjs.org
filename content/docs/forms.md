@@ -281,6 +281,8 @@ Specifying the value prop on a [controlled component](/docs/forms.html#controlle
 The following code demonstrates this. (The input is locked at first but becomes editable after a short delay.)
 
 ```javascript
+let mountNode = document.getElementById('root');
+
 ReactDOM.render(<input value="hi" />, mountNode);
 
 setTimeout(function() {
